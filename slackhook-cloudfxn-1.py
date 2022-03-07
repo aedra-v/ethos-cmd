@@ -7,7 +7,7 @@ def coffee_time(request):
     }
     
     request_json = request.get_json()
-    url = "https://hooks.slack.com/services/TEAMID/CHANNEL/WEBHOOK"
+#    url = "https://hooks.slack.com/services/TEAMID/CHANNEL/WEBHOOK" ##### need to specify #
     payload = '{"text":"It is the coffee time!"}'
     response = requests.request("POST", url, headers=headers, data=payload)
 
