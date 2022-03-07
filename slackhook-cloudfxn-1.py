@@ -1,7 +1,7 @@
 import requests
 
 
-def slackhook_httpincoming(request):
+def slackhook_event(request):
     headers = {
         'Content-Type': 'application/json'
     }
