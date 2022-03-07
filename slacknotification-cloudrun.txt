@@ -1,0 +1,4 @@
+ gcloud run deploy service-name \
+   --image=us-east1-docker.pkg.dev/gcb-release/cloud-build-notifiers/slack:latest \
+   --no-allow-unauthenticated \
+   --update-env-vars=art-py-uswide/slacknotification.yaml=config-path,artaeum-py=project-id
